@@ -1,0 +1,16 @@
+import React, { useEffect,useState } from "react";
+
+function Useeffect() {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    document.title=`Clicked ${count} times`;
+  }, [count]);
+  return(
+    <>
+      <h1>{count}</h1>
+      <button onClick={() => setCount(count + 1)}>Increase</button>
+    </>
+  )
+}
+export default Useeffect;

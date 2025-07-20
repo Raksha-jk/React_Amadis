@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // import Tasklist from './Components/Tasklist';
 import logo from './logo.svg';
 //import './App.css';
@@ -45,6 +46,29 @@ function App() {
       </li>
     </ul>
     </>
+=======
+import logo from './logo.svg';
+import './App.css';
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+>>>>>>> 92ce53efaf7f020661270c762b6a0e059de0f9a1
   );
 }
 
