@@ -1,0 +1,17 @@
+.item1,.item2,.item3,.item4,.item5{
+  height: 100px;
+  width :100px;
+  background-color: blueviolet;
+  border: 1px solid black;
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 600px) {
+  .item1 {grid-area: 1 / span 6;}
+  .item2 {grid-area: 2 / span 6;}
+  .item3 {grid-area: 3 / span 6;}
+  .item4 {grid-area: 4 / span 6;}
+  .item5 {grid-area: 5 / span 6;}
+}

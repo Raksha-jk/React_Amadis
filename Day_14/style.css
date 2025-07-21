@@ -1,0 +1,61 @@
+/* style.css */
+body {
+  background: lightgray;
+  text-align: center;
+}
+
+h1 {
+  color: darkblue;
+}
+
+/* Small screen */
+@media (max-width: 600px) {
+  body {
+    background: pink;
+  }
+
+  h1 {
+    color: red;
+  }
+}
+
+/* Medium screen */
+@media (min-width: 601px) and (max-width: 900px) {
+  body {
+    background: lightgreen;
+  }
+
+  h1 {
+    color: green;
+  }
+}
+/* Base style */
+.container {
+  display: grid;
+  grid-template-columns: 1fr; /* 1 column by default */
+  gap: 10px;
+  padding: 10px;
+}
+
+.item {
+  background-color: lightblue;
+  padding: 20px;
+  font-size: 24px;
+  text-align: center;
+  border: 1px solid #333;
+}
+
+/* Tablet: 2 columns */
+@media (min-width: 600px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop: 4 columns */
+@media (min-width: 900px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
